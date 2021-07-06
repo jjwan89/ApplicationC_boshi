@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
+        android:id="@+id/tv_wc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weChat_login"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"/>
+    <!--<LinearLayout
+        android:id="@+id/ll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_wc"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/time_1"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="30"
+            android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/time_2"
+            android:textSize="10sp" />
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_qr"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_wc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/iv_dialog_shopping_qrCode"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/app3_qr"/>
+        <!--<TextView
+            android:id="@+id/tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/refresh_text"
+            android:textSize="10sp"/>-->
+    </RelativeLayout>
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rl_qr"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_dialog_authorized"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/authorized"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_selector"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/btn_dialog_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_selector"
+            android:text="@string/refresh"
+            android:textSize="10sp"/>
+    </LinearLayout>-->
+
+    <ProgressBar
+        android:id="@+id/pb_dialog"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/item_17"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
